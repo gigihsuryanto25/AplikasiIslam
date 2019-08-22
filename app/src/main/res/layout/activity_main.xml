@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/masjid12"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding"
+        android:background="#0B2D53">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/jadwal_sholat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="bottom|end"
+            android:scaleType="centerCrop">
+
+            <TextView
+                android:id="@+id/tv_jadwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Sholat"
+                android:textColor="#A0801B"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/doa_doa"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/jadwal_sholat"
+            android:layout_marginTop="16dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true" >
+
+            <TextView
+                android:id="@+id/tv_doa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doa Harian"
+                android:textColor="#A0801B"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/produk_halal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true" >
+
+            <TextView
+                android:id="@+id/tv_produk_halal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produk Halal"
+                android:textColor="#A0801B"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gigih Suryanto"
+            android:textColor="#A08018"
+            android:textSize="40dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

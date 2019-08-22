@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">menu_utama</string>
+    <string name="nama_produk">produk</string>
+    <string name="nomor_sertifikat">nomor_sertifikat</string>
+    <string name="produsen">produsen</string>
+    <string name="berkalu_hingga">berkalu_hingga</string>
+    <string name="cari_produk">cari produk</string>
+</resources>
